@@ -1,0 +1,35 @@
+{
+  "name": "shebas-home-care",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/build-css.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sass": "sass --watch public/assets/scss/main.scss public/assets/css/style.css",
+    "sass:build": "node scripts/build-css.js"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "lightgallery": "^2.8.3",
+    "next": "^15.5.9",
+    "react": "^19.0.0",
+    "react-apexcharts": "^1.7.0",
+    "react-bootstrap": "^2.10.10",
+    "react-countdown": "^2.3.6",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-select": "^5.10.1",
+    "swiper": "^11.2.8"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "sass": "^1.89.0",
+    "typescript": "^5"
+  }
+}
