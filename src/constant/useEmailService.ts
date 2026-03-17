@@ -18,12 +18,20 @@ export const useEmailService = () => {
     try {
       const result = await emailjs.sendForm(serviceID, templateID, form, { publicKey });
       return { success: true, message: result.text };
-    } catch (error: any) {
-      console.error('EmailJS error:', error);
-      return { 
-        success: false, 
-        message: error.text || 'Failed to send message. Please try again or contact us directly.' 
-      };
+    } catch (error: unknown) {
+      const err = error as Record<string, unknown>;
+      const message =
+        typeof err?.text === "string"
+          ? err.text
+          : typeof err?.message === "string"
+            ? err.message
+            : typeof err?.statusText === "string"
+              ? err.statusText
+              : err?.status
+                ? `Request failed with status ${err.status}`
+                : "Failed to send message. Please try again or contact us directly.";
+      console.error("EmailJS error:", message, err);
+      return { success: false, message };
     }
   };
 

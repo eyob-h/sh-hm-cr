@@ -75,6 +75,7 @@ function ComingSoon() {
                                 </div>
                                 <p>Big things are coming! Sheba's Home Care will be opening its doors soon. Be the first to experience something special!</p>
                                 <form className="dzSubscribe style-3" ref={form} onSubmit={handleSubmit} method="post" aria-describedby="coming-soon-status">
+                                    <input type="hidden" name="to_email" value="info@shebahomecare.com" />
                                     <div className="dzSubscribeMsg"></div>
                                     <div className="form-group">
                                         <div className="input-group mb-0">

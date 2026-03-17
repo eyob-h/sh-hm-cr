@@ -183,6 +183,7 @@ function Header() {
                                 <h4 className="title">Newsletter</h4>
                             </div>
                             <form className="dzSubscribe style-2" ref={form} onSubmit={handleSubmit} aria-describedby="newsletter-status">
+                                <input type="hidden" name="to_email" value="info@shebahomecare.com" />
                                 <div className="dzSubscribeMsg"></div>
                                 <div className="form-group">
                                     <div className="input-group mb-0">

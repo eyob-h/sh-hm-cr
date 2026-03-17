@@ -97,6 +97,7 @@ function Footer() {
                                 </div>
                                 <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
                                     <form className="dzSubscribe style-1" ref={form} onSubmit={handleSubmit} aria-describedby="footer-newsletter-status">
+                                        <input type="hidden" name="to_email" value="info@shebahomecare.com" />
                                         <div className="dzSubscribeMsg"></div>
                                         <div className="form-group">
                                             <div className="input-group mb-0">
