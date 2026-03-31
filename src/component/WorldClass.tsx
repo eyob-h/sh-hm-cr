@@ -94,7 +94,7 @@ function WorldClass() {
                             </div>
                             <div className="widget-content">
                                 <h6 className="title">Contact us</h6>
-                                <Link href="tel:+17812345678" className="text-secondary">+1 781 234 5678</Link>
+                                <Link href="tel:+17812446847" className="text-secondary">+1 781-244-6847</Link>
                             </div>
                         </div>
                     </div>
