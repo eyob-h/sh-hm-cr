@@ -21,8 +21,8 @@ function PageBanner({ title, bnrimage, backgroundPosition = "center center" } : 
                             </ul>
                         </nav>
                         <div className="dz-btn">
-                            <Link href="tel:+11234567890" className="btn btn-lg btn-icon btn-primary radius-xl btn-shadow mb-3 mb-sm-0">
-                                <span className="left-icon"> <i className="feather icon-phone-call" /> </span> +1 123 456 7890
+                            <Link href="tel:+17812446847" className="btn btn-lg btn-icon btn-primary radius-xl btn-shadow mb-3 mb-sm-0">
+                                <span className="left-icon"> <i className="feather icon-phone-call" /> </span> +1 781-244-6847
                             </Link>
                         </div>
                     </div>
