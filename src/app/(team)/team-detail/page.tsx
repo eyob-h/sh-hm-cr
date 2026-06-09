@@ -6,6 +6,7 @@ import Header from "@/layout/Header";
 import Table from 'react-bootstrap/Table';
 import AppointForm from "./_components/AppointForm";
 import Image from "next/image";
+import SocialLinks from "@/component/SocialLinks";
 
 function TeamDetail() {   
     return (
@@ -23,13 +24,7 @@ function TeamDetail() {
                                             <div className="dz-media">
                                                 <Image src={IMAGES.teampmg2} alt="Care team member portrait" />
                                             </div>
-                                            <ul className="dz-social">
-                                                <li><Link href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin" /></Link></li>
-                                                <li><Link href="#" aria-label="Instagram"><i className="fa-brands fa-instagram" /></Link></li>
-                                                <li><Link href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></Link></li>
-                                                <li><Link href="#" aria-label="X"><i className="fa-brands fa-x-twitter" /></Link></li>
-                                                <li><Link href="#" aria-label="YouTube"><i className="fa-brands fa-youtube" /></Link></li>
-                                            </ul>
+                                            <SocialLinks ulClassName="dz-social" />
                                         </div>
                                     </div>
                                     <div className="widget widget_schedule bg-secondary text-white wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.7s">
@@ -75,7 +70,7 @@ function TeamDetail() {
                                             </div>
                                             <div className="icon-content">
                                                 <h5 className="dz-title fw-semibold">Call Us</h5>
-                                                <p className="fw-normal"><Link href="tel:+11234567890" className="text-body">+1 123 456 7890</Link></p>
+                                                <p className="fw-normal"><Link href="tel:+17812446847" className="text-body">+1 781-244-6847</Link></p>
                                             </div>
                                         </div>
                                         <div className="icon-bx-wraper style-1 m-b15">

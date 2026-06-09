@@ -4,6 +4,7 @@ import { IMAGES, SVGICONS } from "../../constant/theme";
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { useEmailService } from "@/constant/useEmailService";
+import SocialLinks from "@/component/SocialLinks";
 
 function UnderConstruction() {
     let year = new Date().getFullYear();
@@ -62,14 +63,7 @@ function UnderConstruction() {
                                 >
                                     {statusMessage}
                                 </p>
-                                <div className="dz-social-icon style-4">
-                                    <ul>
-                                        <li><Link href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></Link></li>
-                                        <li><Link href="#" aria-label="X"><i className="fa-brands fa-twitter" /></Link></li>
-                                        <li><Link href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin" /></Link></li>
-                                        <li><Link href="#" aria-label="Instagram"><i className="fa-brands fa-instagram" /></Link></li>
-                                    </ul>
-                                </div>
+                                <SocialLinks wrapperClassName="dz-social-icon style-4" />
                             </div>
                         </div>
                         <div className="col-lg-6">

@@ -6,6 +6,7 @@ import Countdown from 'react-countdown';
 import { useEffect, useRef, useState } from "react";
 import type { CountdownRenderProps } from 'react-countdown';
 import { useEmailService } from "@/constant/useEmailService";
+import SocialLinks from "@/component/SocialLinks";
 
 function ComingSoon() {
     const [targetDate, setTargetDate] = useState<Date | null>(null);
@@ -101,14 +102,7 @@ function ComingSoon() {
                             </div>
                         </div>
                         <div className="bottom-wrapper">
-                            <div className="dz-social-icon style-4 m-b20">
-                                <ul>
-                                    <li><Link href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></Link></li>
-                                    <li><Link href="#" aria-label="X"><i className="fa-brands fa-twitter" /></Link></li>
-                                    <li><Link href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin" /></Link></li>
-                                    <li><Link href="#" aria-label="Instagram"><i className="fa-brands fa-instagram" /></Link></li>
-                                </ul>
-                            </div>
+                            <SocialLinks wrapperClassName="dz-social-icon style-4 m-b20" />
                             <p className="copyright-text m-0">© <span className="current-year">2025</span> Sheba&apos;s Home Care. All Rights Reserved. Website by <Link href="https://www.MomonaTech.com" target="_blank" rel="noopener noreferrer">MomonaTech</Link></p>
                         </div>
                     </div>

@@ -5,6 +5,7 @@ import Header from "@/layout/Header";
 import Sidebar from "@/component/Sidebar";
 import Image from "next/image";
 import CommentForm from "./_components/CommentForm";
+import SocialLinks from "@/component/SocialLinks";
 
 function BlogDetail() {
    
@@ -67,14 +68,7 @@ function BlogDetail() {
                                                 <Link href={"#"} scroll={false}>Therapy</Link>
                                                 <Link href={"#"} scroll={false}>Walking</Link>
                                             </div>
-                                            <div className="dz-social-icon primary-light">
-                                                <ul>
-                                                    <li><Link href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></Link></li>
-                                                    <li><Link href="#" aria-label="Instagram"><i className="fa-brands fa-instagram" /></Link></li>
-                                                    <li><Link href="#" aria-label="X"><i className="fa-brands fa-x-twitter" /></Link></li>
-                                                    <li><Link href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin" /></Link></li>
-                                                </ul>
-                                            </div>
+                                            <SocialLinks wrapperClassName="dz-social-icon primary-light" />
                                         </div>
                                     </div>
                                 </div>

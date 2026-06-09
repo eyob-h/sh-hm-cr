@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { locationdata } from "../constant/alldata";
-// import GoogleMap from "./GoogleMap";
+import { GOOGLE_MAPS_URL, MAP_EMBED_URL } from "@/constant/site";
 
 function Alllocation() {
     return (
@@ -16,7 +16,7 @@ function Alllocation() {
                                 <div className="content-bx style-6 shadow-sm">
                                     <div className="dz-media">                                                                                                                   
                                         <iframe 
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28891.193971348785!2d75.8546432!3d25.1559936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719221707984!5m2!1sen!2sin"                         
+                                        src={MAP_EMBED_URL}                         
                                             style={{ border: 0 , height: '100%', width: '100%'}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                                         />  
                                     </div>
@@ -33,7 +33,7 @@ function Alllocation() {
                                             </div>
                                         </div>
                                         <div className="dz-footer">
-                                            <Link href="https://www.google.com/maps/" target="_blank" rel="noopener noreferrer" className="icon-link-hover-end" aria-label="Open Google Maps for directions">
+                                            <Link href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="icon-link-hover-end" aria-label="Open Google Maps for directions">
                                                 Get Directions <i className="feather icon-arrow-up-right" />
                                             </Link>
                                         </div>

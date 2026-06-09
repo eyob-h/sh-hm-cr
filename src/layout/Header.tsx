@@ -5,6 +5,7 @@ import { headerdata, headerinfo,  HeaderItem  } from "../constant/alldata";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useEmailService } from "@/constant/useEmailService";
+import SocialLinks from "@/component/SocialLinks";
 
 
 function Header() {
@@ -131,14 +132,7 @@ function Header() {
                                         }
                                     })}
                                 </ul>
-                                <div className="dz-social-icon">
-                                    <ul>
-                                    <li> <Link href="#" aria-label="Facebook"> <i className="fa-brands fa-facebook-f" /> </Link> </li>
-                                        <li> <Link href="#" aria-label="X"> <i className="fa-brands fa-x-twitter" /> </Link> </li>
-                                        <li> <Link href="#" aria-label="LinkedIn"> <i className="fa-brands fa-linkedin" /> </Link> </li>
-                                        <li> <Link href="#" aria-label="Instagram"> <i className="fa-brands fa-instagram" /> </Link> </li>
-                                    </ul>
-                                </div>
+                                <SocialLinks wrapperClassName="dz-social-icon" />
                             </div>
                             <div className={`extra-nav ${scroll ? 'active' : ''}`}>
                                 <div className="extra-cell">
@@ -208,15 +202,7 @@ function Header() {
                             <div className="widget-title">
                                 <h4 className="title">Follow Us</h4>
                             </div>
-                            <div className="dz-social-icon style-1">
-                                <ul>
-                                    <li><Link href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin" /></Link> </li>
-                                    <li><Link href="#" aria-label="Instagram"><i className="fa-brands fa-instagram" /></Link> </li>
-                                    <li><Link href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></Link> </li>
-                                    <li><Link href="#" aria-label="X"><i className="fa-brands fa-x-twitter" /></Link> </li>
-                                    <li><Link href="#" aria-label="YouTube"><i className="fa-brands fa-youtube" /></Link> </li>
-                                </ul>
-                            </div>
+                            <SocialLinks wrapperClassName="dz-social-icon style-1" />
                         </div>
                     </div>
                 </div>

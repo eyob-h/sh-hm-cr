@@ -3,6 +3,7 @@ import { empolydata } from "@/constant/alldata";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import SocialLinks from "@/component/SocialLinks";
 
 const SurgeryBlog = () =>{
     const [active, setActive] = useState(1);
@@ -26,13 +27,7 @@ const SurgeryBlog = () =>{
                                 <i className="feather icon-arrow-right" />
                             </Link>
                         </div>
-                        <ul className="dz-social">
-                            <li><Link href="#" aria-label="LinkedIn"> <i className="fa-brands fa-linkedin" /></Link></li>
-                            <li><Link href="#" aria-label="Instagram"> <i className="fa-brands fa-instagram" /></Link></li>
-                            <li><Link href="#" aria-label="Facebook"> <i className="fa-brands fa-facebook-f" /></Link></li>
-                            <li><Link href="#" aria-label="X"> <i className="fa-brands fa-x-twitter" /></Link></li>
-                            <li><Link href="#" aria-label="YouTube"> <i className="fa-brands fa-youtube" /></Link></li>
-                        </ul>
+                        <SocialLinks ulClassName="dz-social" />
                     </div>
                 </div>
             ))}

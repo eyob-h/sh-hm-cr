@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { mapdata } from "../constant/alldata";
+import { MAP_EMBED_URL } from "@/constant/site";
 
 function MapWraper() {
     return (
@@ -7,7 +8,7 @@ function MapWraper() {
             <section className="content-wrapper style-4">
                 <div className="container">
                     <div className="map-wrapper">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28891.193971348785!2d75.8546432!3d25.1559936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719221707984!5m2!1sen!2sin" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src={MAP_EMBED_URL} width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div className="row">
                         <div className="col-xxl-4 col-xl-5 col-lg-6 col-md-6 col-sm-8">

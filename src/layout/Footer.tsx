@@ -5,6 +5,7 @@ import { footerdata1, footerdata2 } from "../constant/alldata";
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { useEmailService } from "@/constant/useEmailService";
+import SocialLinks from "@/component/SocialLinks";
 
 
 function Footer() {
@@ -65,6 +66,7 @@ function Footer() {
                                         <Link href="/"><Image src={IMAGES.logo} alt="Sheba's Home Care logo" /></Link>
                                     </div>
                                     <p><span className="text-primary">Sheba's Home Care</span> provides professional, compassionate home healthcare services. We offer personalized medical care, nursing services, and support for patients in the comfort of their homes. Your health and well-being are our top priorities.</p>
+                                    <SocialLinks wrapperClassName="dz-social-icon style-1 m-t20" />
                                 </div>
                             </div>
                             {footerdata2.map((data, i) => (

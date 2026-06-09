@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import Link from "next/link";
+import SocialLinks from "@/component/SocialLinks";
 
 interface Props{
     title : string,
@@ -28,12 +29,7 @@ function PageBanner({ title, bnrimage, backgroundPosition = "center center" } : 
                     </div>
                 </div>
                 <span className="text-vertical">24/7 EMERGENCY SERVICE</span>
-                <ul className="dz-social">
-                    <li><Link href="#" aria-label="Instagram"><i className="fa-brands fa-instagram" /></Link></li>
-                    <li><Link href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></Link></li>
-                    <li><Link href="#" aria-label="X"><i className="fa-brands fa-x-twitter" /></Link></li>
-                    <li><Link href="#" aria-label="YouTube"><i className="fa-brands fa-youtube" /></Link></li>
-                </ul>
+                <SocialLinks ulClassName="dz-social" />
             </div>
         </>
     )
