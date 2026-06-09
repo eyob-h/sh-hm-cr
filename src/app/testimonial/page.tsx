@@ -10,7 +10,6 @@ import PageBanner from "@/component/PageBanner";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import RealPatient from "@/component/RealPatient";
-import ClientSwiper2 from "@/component/ClientSwiper2";
 import { testidata, testiswipeerdata2 } from "@/constant/alldata";
 import Image from "next/image";
 
@@ -146,7 +145,6 @@ function Testimonial() {
                 <section className="clearfix p-t50 overlay-secondary-dark bg-primary background-blend-multiply overflow-hidden" style={{ backgroundImage: `url(${IMAGES.bg3})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right center', backgroundSize: 'cover' }}>
                     <RealPatient />
                 </section>
-                <ClientSwiper2 />
             </main>
             <Footer />                       
             <Modal show={show} onHide={handleClose} centered  size={"lg"} className="video-model">                           

@@ -12,7 +12,6 @@ import MeetDr from "@/component/MeetDr";
 import Empoly from "@/component/EmpolyBlog";
 import RealPatient from "@/component/RealPatient";
 import Schedule from "@/component/Schedule";
-import Clientswiper1 from "@/component/Clientswiper1";
 import Connect from "@/component/Connect";
 import Inspirational from "@/component/Inspirational";
 import { useEmailService } from "@/constant/useEmailService";
@@ -144,7 +143,6 @@ function AboutUs() {
                     </div>
                 </section>
                 <Schedule />
-                <Clientswiper1 />
             </main>
         </>
     );

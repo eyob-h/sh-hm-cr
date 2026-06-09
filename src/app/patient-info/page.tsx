@@ -1,7 +1,6 @@
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import { IMAGES } from "@/constant/theme";
-import Clientswiper1 from "@/component/Clientswiper1";
 import PageBanner from "@/component/PageBanner";
 import Schedule from "@/component/Schedule";
 import StayInformed from "@/component/StayInformed";
@@ -33,7 +32,6 @@ function PatientInfo() {
                         </div>
                     </div>
                 </section>
-                <Clientswiper1 />
                 <Schedule />
                 <section className="content-inner-2">
                     <div className="container">

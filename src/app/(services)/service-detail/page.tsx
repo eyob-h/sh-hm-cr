@@ -6,7 +6,6 @@ import PageBanner from "@/component/PageBanner";
 import { servicedetails, worldclasslistdata, serviceDetailAccordionData } from "@/constant/alldata";
 import Image from "next/image";
 import AccordionBlog from "./_components/AccordionBlog";
-import SurgeryBlog from "./_components/SurgeryBlog";
 
 function ServiceDetail() {
     return (
@@ -39,10 +38,6 @@ function ServiceDetail() {
                                             <li key={i}>{item.title}</li>
                                         ))}
                                     </ul>
-                                </div>
-                                <div className="content-item wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.7s">
-                                    <h3>Our Care Team</h3>
-                                    <SurgeryBlog />
                                 </div>
                                 <div className="content-item wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.7s">
                                     <h3>Frequently asked questions</h3>
