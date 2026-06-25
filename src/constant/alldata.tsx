@@ -6,7 +6,7 @@ import Image, { StaticImageData } from "next/image"
 // header 
 export const headerinfo = [
     { image: IMAGES.svgicon1, title: 'Contact Us', paragraph: <Link href="tel:+17812446847" className="text-secondary">+1 781-244-6847</Link>, },
-    { image: IMAGES.svgicon2, title: 'Email Support', paragraph: <Link href="mailto:info@shebahomecare.com" className="text-secondary">info@shebahomecare.com</Link>, },
+    { image: IMAGES.svgicon2, title: 'Email Support', paragraph: <Link href="mailto:info@shebahomecares.com" className="text-secondary">info@shebahomecares.com</Link>, },
     { image: IMAGES.svgicon3, title: 'Schedule A Meeting', paragraph: <Link href="/appointment" className="text-secondary">Book Now<i className="feather icon-arrow-right" /></Link>, },
     { image: IMAGES.svgicon4, title: '24/7 Support', paragraph: 'Available Anytime', },
 ]
@@ -45,7 +45,7 @@ export const headerdata : HeaderItem[] = [
 // footer 
 export const footerdata1 = [
     { delay: '0.4s', icon: <i className="feather icon-phone" />, title: 'Call Us', paragraph: <Link href="tel:+17812446847" className="text-body">+1 781-244-6847</Link>, },
-    { delay: '0.6s', icon: <i className="feather icon-mail" />, title: 'Send us a Mail', paragraph: <Link href="mailto:info@shebahomecare.com" className="text-body">info@shebahomecare.com</Link>, },
+    { delay: '0.6s', icon: <i className="feather icon-mail" />, title: 'Send us a Mail', paragraph: <Link href="mailto:info@shebahomecares.com" className="text-body">info@shebahomecares.com</Link>, },
     { delay: '0.8s', icon: <i className="feather icon-clock" />, title: 'Available', paragraph: "24/7 Home Care Services", },
 ]
 export const footerdata2 = [
@@ -213,7 +213,7 @@ export const inspirationaldata = [
 export const mapdata = [
     { id: 1, delay: '0.2s', icon: <i className="feather icon-map-pin" />, title: "Address", para: <p>41 Brimblecom St, Lynn, MA 01902</p>, },
     { id: 2, delay: '0.4s', icon: <i className="feather icon-phone" />, title: "Call Us", para: <p><Link href="tel:+17812446847">+1 781-244-6847</Link></p>, },
-    { id: 3, delay: '0.6s', icon: <i className="feather icon-mail" />, title: "Send us a Mail", para: <p><Link href="mailto:info@shebahomecare.com">info@shebahomecare.com</Link></p>, },
+    { id: 3, delay: '0.6s', icon: <i className="feather icon-mail" />, title: "Send us a Mail", para: <p><Link href="mailto:info@shebahomecares.com">info@shebahomecares.com</Link></p>, },
     { id: 4, delay: '0.8s', icon: <i className="feather icon-clock" />, title: "Opening Time", para: <p>24/7 Available <br /> Anytime You Need Us</p>, },
 ]
 // meetdr 

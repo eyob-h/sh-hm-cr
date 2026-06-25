@@ -40,7 +40,7 @@ function UnderConstruction() {
                                 <h2 className="dz-title">Our website is <span className="text-primary">under construction</span></h2>
                                 <p>We’re working hard to bring you a better experience! Our website is under construction, but we’ll be back soon. Stay tuned!</p>
                                 <form className="dzSubscribe style-3" ref={form} onSubmit={handleSubmit} aria-describedby="under-construction-status">
-                                    <input type="hidden" name="to_email" value="info@shebahomecare.com" />
+                                    <input type="hidden" name="to_email" value="info@shebahomecares.com" />
                                     <div className="dzSubscribeMsg"></div>
                                     <div className="form-group">
                                         <div className="input-group mb-0">

@@ -99,7 +99,7 @@ function HomePage() {
                                     </div>
                                     <div className="widget-content">
                                         <h6 className="title">Have a Question?</h6>
-                                        <Link href="mailto:info@shebahomecare.com">info@shebahomecare.com</Link>
+                                        <Link href="mailto:info@shebahomecares.com">info@shebahomecares.com</Link>
                                     </div>
                                 </div>
                             </div>

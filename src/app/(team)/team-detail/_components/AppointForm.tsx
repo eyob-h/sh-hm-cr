@@ -32,7 +32,7 @@ const AppointForm = () => {
                 aria-describedby="appointment-form-status"
             >
                 <input type="hidden" className="form-control" name="dzToDo" value="Contact" />
-                <input type="hidden" name="to_email" value="info@shebahomecare.com" />
+                <input type="hidden" name="to_email" value="info@shebahomecares.com" />
                 <div className="dzFormMsg"></div>
                 <div className="row">
                     <div className="col-sm-6 m-b30">

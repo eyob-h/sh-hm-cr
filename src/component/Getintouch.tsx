@@ -36,7 +36,7 @@ function Getintouch() {
                         <form ref={form} onSubmit={handleSubmit} className="dzForm" aria-describedby="get-in-touch-status">
                             <input type="hidden" className="form-control" name="dzToDo" value="Contact" />
                             <input type="hidden" className="form-control" name="reCaptchaEnable" value="0" />
-                            <input type="hidden" name="to_email" value="info@shebahomecare.com" />
+                            <input type="hidden" name="to_email" value="info@shebahomecares.com" />
                             <input type="hidden" name="website_url" value={typeof window !== "undefined" ? window.location.origin : ""} />
                             <div className="dzFormMsg"></div>
                             <div className="row">
@@ -73,7 +73,8 @@ function Getintouch() {
                         </form>
                         <p
                             id="get-in-touch-status"
-                            className={`m-t10 ${statusMessage ? (isSuccess ? "text-success" : "text-danger") : "visually-hidden"}`}
+                            className={`m-t10 ${statusMessage ? (isSuccess ? "fw-bold" : "text-danger") : "visually-hidden"}`}
+                            style={statusMessage && isSuccess ? { color: "#f5f0e8" } : undefined}
                             aria-live="polite"
                         >
                             {statusMessage}

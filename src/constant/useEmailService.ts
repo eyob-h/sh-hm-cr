@@ -16,8 +16,11 @@ export const useEmailService = () => {
     }
 
     try {
-      const result = await emailjs.sendForm(serviceID, templateID, form, { publicKey });
-      return { success: true, message: result.text };
+      await emailjs.sendForm(serviceID, templateID, form, { publicKey });
+      return {
+        success: true,
+        message: "Your request has been submitted successfully. We'll contact you shortly.",
+      };
     } catch (error: unknown) {
       const err = error as Record<string, unknown>;
       const message =

@@ -22,7 +22,7 @@ const CommentForm = () =>{
     };
     return(
         <form ref={form} onSubmit={handleSubmit} method="post" id="comments_form" className="comment-form" noValidate aria-describedby="comment-status">
-            <input type="hidden" name="to_email" value="info@shebahomecare.com" />
+            <input type="hidden" name="to_email" value="info@shebahomecares.com" />
             <p className="comment-form-author">
                 <input id="name" placeholder="Author" name="author" type="text" />
             </p>

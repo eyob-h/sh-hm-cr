@@ -168,7 +168,7 @@ function Header() {
                             </div>
                             <ul className="list-check">
                                 <li>41 Brimblecom St, Lynn, MA 01902</li>
-                                <li><Link href="mailto:info@shebahomecare.com" className="text-body">info@shebahomecare.com</Link></li>
+                                <li><Link href="mailto:info@shebahomecares.com" className="text-body">info@shebahomecares.com</Link></li>
                                 <li><Link href="tel:+17812446847" className="text-body">+1 781-244-6847</Link></li>
                             </ul>
                         </div>
@@ -177,7 +177,7 @@ function Header() {
                                 <h4 className="title">Newsletter</h4>
                             </div>
                             <form className="dzSubscribe style-2" ref={form} onSubmit={handleSubmit} aria-describedby="newsletter-status">
-                                <input type="hidden" name="to_email" value="info@shebahomecare.com" />
+                                <input type="hidden" name="to_email" value="info@shebahomecares.com" />
                                 <div className="dzSubscribeMsg"></div>
                                 <div className="form-group">
                                     <div className="input-group mb-0">

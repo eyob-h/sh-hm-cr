@@ -1,6 +1,6 @@
 export const CONTACT_PHONE = "+1 781-244-6847";
 export const CONTACT_PHONE_TEL = "tel:+17812446847";
-export const CONTACT_EMAIL = "info@shebahomecare.com";
+export const CONTACT_EMAIL = "info@shebahomecares.com";
 export const CONTACT_ADDRESS = "41 Brimblecom St, Lynn, MA 01902";
 
 export const MAP_EMBED_URL =

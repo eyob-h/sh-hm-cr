@@ -66,7 +66,7 @@ function ServiceDetail() {
                                                 <Link href="tel:+17812446847" className="text-white">+1 781-244-6847</Link>
                                             </div>
                                             <div className="email">
-                                                <Link href="mailto:info@shebahomecare.com" className="text-white">info@shebahomecare.com</Link>
+                                                <Link href="mailto:info@shebahomecares.com" className="text-white">info@shebahomecares.com</Link>
                                             </div>
                                             <div className="link-btn">
                                                 <Link href="/contact-us" className="btn btn-lg btn-icon btn-white hover-secondary btn-shadow">

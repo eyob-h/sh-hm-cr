@@ -45,7 +45,7 @@ function AppointmentData() {
                                     <form ref={form} onSubmit={handleSubmit} className="dzForm" method="POST" aria-describedby="appointment-status">
                                         <input type="hidden" className="form-control" name="dzToDo" value="Appointment" />
                                         <input type="hidden" className="form-control" name="reCaptchaEnable" value="0" />
-                                        <input type="hidden" name="to_email" value="info@shebahomecare.com" />
+                                        <input type="hidden" name="to_email" value="info@shebahomecares.com" />
                                         <div className="dzFormMsg"></div>
                                         <div className="row">
                                             <div className="col-sm-6 m-b30">

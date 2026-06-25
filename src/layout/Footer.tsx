@@ -99,7 +99,7 @@ function Footer() {
                                 </div>
                                 <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
                                     <form className="dzSubscribe style-1" ref={form} onSubmit={handleSubmit} aria-describedby="footer-newsletter-status">
-                                        <input type="hidden" name="to_email" value="info@shebahomecare.com" />
+                                        <input type="hidden" name="to_email" value="info@shebahomecares.com" />
                                         <div className="dzSubscribeMsg"></div>
                                         <div className="form-group">
                                             <div className="input-group mb-0">
@@ -145,7 +145,7 @@ function Footer() {
                         </div>
                         <div className="widget-content">
                             <h6 className="title">Have a Question?</h6>
-                            <Link href="mailto:info@shebahomecare.com">info@shebahomecare.com</Link>
+                            <Link href="mailto:info@shebahomecares.com">info@shebahomecares.com</Link>
                             <span className="text">Sheba Home Care</span>
                         </div>
                     </div>
