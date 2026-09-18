@@ -1,40 +1,51 @@
-import emailjs from '@emailjs/browser';
+import { isValidPhone, PHONE_ERROR_MESSAGE } from "@/constant/phone";
 
 export const useEmailService = () => {
   const sendEmail = async (form: HTMLFormElement) => {
-    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-    // Gracefully handle missing EmailJS configuration
-    if (!serviceID || !templateID || !publicKey) {
-      console.warn('EmailJS configuration is missing. Form submissions will not be sent.');
-      return { 
-        success: false, 
-        message: 'Email service is not configured. Please contact us directly.' 
-      };
+    const phoneInput = form.elements.namedItem("dzPhoneNumber");
+    if (phoneInput instanceof HTMLInputElement) {
+      const phone = phoneInput.value.trim();
+      if (!isValidPhone(phone)) {
+        phoneInput.setCustomValidity(PHONE_ERROR_MESSAGE);
+        phoneInput.reportValidity();
+        return { success: false, message: PHONE_ERROR_MESSAGE };
+      }
+      phoneInput.setCustomValidity("");
     }
 
     try {
-      await emailjs.sendForm(serviceID, templateID, form, { publicKey });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: new FormData(form),
+      });
+
+      const data = (await response.json().catch(() => null)) as {
+        success?: boolean;
+        message?: string;
+      } | null;
+
+      if (!response.ok || !data?.success) {
+        return {
+          success: false,
+          message:
+            data?.message ||
+            "Failed to send message. Please try again or contact us directly.",
+        };
+      }
+
       return {
         success: true,
-        message: "Your request has been submitted successfully. We'll contact you shortly.",
+        message:
+          data.message ||
+          "Your request has been submitted successfully. We'll contact you shortly.",
       };
-    } catch (error: unknown) {
-      const err = error as Record<string, unknown>;
-      const message =
-        typeof err?.text === "string"
-          ? err.text
-          : typeof err?.message === "string"
-            ? err.message
-            : typeof err?.statusText === "string"
-              ? err.statusText
-              : err?.status
-                ? `Request failed with status ${err.status}`
-                : "Failed to send message. Please try again or contact us directly.";
-      console.error("EmailJS error:", message, err);
-      return { success: false, message };
+    } catch (error) {
+      console.error("Contact form error:", error);
+      return {
+        success: false,
+        message:
+          "Failed to send message. Please try again or contact us directly.",
+      };
     }
   };
 

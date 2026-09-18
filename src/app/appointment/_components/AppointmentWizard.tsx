@@ -1,6 +1,7 @@
 "use client"
 
 import { IMAGES, SVGICONS } from "@/constant/theme";
+import { PHONE_INPUT_PATTERN, PHONE_INPUT_TITLE } from "@/constant/phone";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -104,7 +105,7 @@ const AppointmentWizard = () =>{
 									</div>
 									<div className="col-sm-6 m-b30">
 										<div className="form-floating floating-outline input-light">
-											<input name="dzPhoneNumber" type="text" className="form-control dz-number" id="inputPhoneNumber" required placeholder="Phone Number" />
+											<input name="dzPhoneNumber" type="tel" className="form-control dz-number" id="inputPhoneNumber" required placeholder="Phone Number" inputMode="tel" autoComplete="tel" pattern={PHONE_INPUT_PATTERN} title={PHONE_INPUT_TITLE} />
 											<label htmlFor="inputPhoneNumber">Phone Number</label>
 										</div>
 									</div>

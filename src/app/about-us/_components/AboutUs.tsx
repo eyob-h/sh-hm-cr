@@ -15,6 +15,7 @@ import Schedule from "@/component/Schedule";
 import Connect from "@/component/Connect";
 import Inspirational from "@/component/Inspirational";
 import { useEmailService } from "@/constant/useEmailService";
+import { PHONE_INPUT_PATTERN, PHONE_INPUT_TITLE } from "@/constant/phone";
 
 
 function AboutUs() {
@@ -118,7 +119,7 @@ function AboutUs() {
                                                 </div>
                                                 <div className="col-sm-12 m-b30">
                                                     <div className="form-floating floating-underline input-light">
-                                                        <input name="dzPhoneNumber" type="tel" className="form-control dz-number" id="inputPhoneNumber" placeholder="Phone Number" required />
+                                                        <input name="dzPhoneNumber" type="tel" className="form-control dz-number" id="inputPhoneNumber" placeholder="Phone Number" required inputMode="tel" autoComplete="tel" pattern={PHONE_INPUT_PATTERN} title={PHONE_INPUT_TITLE} />
                                                         <label htmlFor="inputPhoneNumber">Phone Number</label>
                                                     </div>
                                                 </div>

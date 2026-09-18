@@ -16,17 +16,34 @@ Professional home healthcare services website built with Next.js 15, React 19, a
 npm install
 ```
 
-2. Compile SCSS to CSS (if needed):
+2. Create a `.env.local` file with your Resend credentials:
+```env
+RESEND_API_KEY=re_xxxxxxxx
+# Verified sender (use onboarding@resend.dev only for Resend account testing)
+RESEND_FROM_EMAIL=Sheba's Home Care <noreply@shebahomecares.com>
+# One or more recipients (comma-separated)
+RESEND_TO_EMAIL=info@shebahomecares.com,you@gmail.com
+```
+
+3. Compile SCSS to CSS (if needed):
 ```bash
 npm run sass
 ```
 
-3. Run the development server:
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Email (Resend)
+
+Contact, appointment, and newsletter forms POST to `/api/contact`, which sends email via [Resend](https://resend.com).
+
+- Get an API key from the Resend dashboard.
+- For production, verify `shebahomecares.com` in Resend and use a from-address on that domain.
+- Until the domain is verified, `onboarding@resend.dev` can only deliver to your Resend account email.
 
 ## 📦 Build for Production
 
